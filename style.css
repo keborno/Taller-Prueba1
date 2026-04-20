@@ -1,70 +1,94 @@
-/* Reset básico */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+/* BODY */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #c3ec52, #0ba360);
-    color: #fff;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* NAV */
+nav {
+    background: #0055aa;
+}
+
+nav ul {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    list-style: none;
 }
 
-/* Contenedor */
-.container {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+nav ul li {
+    margin: 10px;
 }
 
-/* Header */
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+/* SECCIONES */
+section {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 10px;
 }
 
-/* Main */
-main p {
-    margin: 20px 0;
-    font-size: 1.2em;
+/* TARJETAS */
+.card {
+    background: #e9ecef;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
 }
 
-.icon {
-    width: 80px;
-    margin-bottom: 20px;
+/* LISTAS */
+ul {
+    margin-left: 20px;
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin: 5px 0 15px 0;
+    padding: 10px;
 }
 
 button {
-    padding: 12px 25px;
-    font-size: 1em;
-    background-color: #ffbb33;
-    color: #333;
+    background: #003366;
+    color: white;
+    padding: 10px;
     border: none;
-    border-radius: 10px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #ffdd66;
+    background: #0055aa;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-    margin-top: 30px;
-    font-size: 0.9em;
-    color: #eee;
+    text-align: center;
+    background: #003366;
+    color: white;
+    padding: 10px;
 }
